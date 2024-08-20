@@ -7,12 +7,12 @@ import {
 import { YOUTUBE_API_URL } from "./constants";
 import { HomePageVideos } from "../Types";
 
-const API_KEY = "AIzaSyBUocDWJkJ6nwi-3Vpl19qNoJt5219nWnI";
+const API_KEY = "AIzaSyBZqcEQCWkeNCRl8G-HTPxdWPafz-wWTtI";
 
 export const parseData = async (items: any[]) => {
   try {
     const videoIds: string[] = [];
-    const channelIds: string[] = [];
+    const channelIds: string[] = []; 
     items.forEach(
       (item: { snippet: { channelId: string }; id: { videoId: string } }) => {
         channelIds.push(item.snippet.channelId);

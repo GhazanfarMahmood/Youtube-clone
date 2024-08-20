@@ -38,11 +38,12 @@ const Card = ({ data }: { data: HomePageVideos }) => {
                     {data.channelInfo.name}
                 </a>
             </div>
-          </div>
-          <span className="after:content-['•'] after:mx-1 ">
+            <span className="after:content-['•'] after:mx-1 ">
             {data.videoViews} views
           </span>
           <span>{data.videoAge}</span>
+          </div>
+         
         </div>
       </div>
     </div>
