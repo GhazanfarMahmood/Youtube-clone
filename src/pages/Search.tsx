@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import NavBar from "../components/NavBar"
 import SideBar from "../components/SideBar"
 import { useAppDispatch, useAppSelector } from "../store/hooks"
-import { getHomePageVideos } from "../store/reducers/getHomePageVideos";
+// import { getHomePageVideos } from "../store/reducers/getHomePageVideos";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Spinner from "../components/Spinner";
 import { HomePageVideos } from "../Types";
@@ -13,7 +13,7 @@ import SearchCard from "../components/SearchCard";
 
 const Search = () => {
   const navigate = useNavigate();
-  const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch(); 
   const videos = useAppSelector((state) => state.youtubeApp.videos);
   const searchTerm = useAppSelector((state) => state.youtubeApp.searchTerm);
 
